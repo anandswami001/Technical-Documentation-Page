@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a href="#HTML_Basics" class="nav-link">HTML Basics</a>
+        <a href="#CSS_Styling" class="nav-link">CSS Styling</a>
+        <a href="#JavaScript_Fundamentals" class="nav-link">JavaScript Fundamentals</a>
+        <a href="#Git_and_GitHub" class="nav-link">Git and GitHub</a>
+        <a href="#Web_Development_Tools" class="nav-link">Web Development Tools</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-doc">
+        <!-- HTML Basics Section -->
+        <section id="HTML_Basics" class="main-section">
+            <header>HTML Basics</header>
+            <p>HTML stands for HyperText Markup Language, and it's the standard markup language for creating web pages.</p>
+            <p>It allows us to structure content on the web by using a system of elements, or tags, to define different parts of a webpage.</p>
+            <p>HTML documents consist of nested elements that represent different parts of the page.</p>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code>&lt;html&gt;</code>
+            <code>&lt;head&gt;</code>
+            <code>&lt;body&gt;</code>
+            <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+            <ul>
+                <li>HTML uses tags to define page structure.</li>
+                <li>Common tags include &lt;div&gt;, &lt;span&gt;, &lt;a&gt;, and &lt;img&gt;.</li>
+                <li>The &lt;head&gt; section contains metadata about the page, such as title and links to external files like CSS.</li>
+                <li>The &lt;body&gt; section contains the actual content of the page.</li>
+                <li>HTML elements can have attributes like class, id, href, and src for additional functionality.</li>
+            </ul>
+        </section>
+
+        <!-- CSS Styling Section -->
+        <section id="CSS_Styling" class="main-section">
+            <header>CSS Styling</header>
+            <p>CSS (Cascading Style Sheets) is used to control the presentation, formatting, and layout of a web page.</p>
+            <p>It enables developers to apply different styles to HTML elements, such as colors, fonts, spacing, and alignment.</p>
+            <p>CSS can be included directly in the HTML file, within a &lt;style&gt; tag, or externally using a &lt;link&gt; tag.</p>
+            <code>body {}</code>
+            <code>h1 {color: blue;}</code>
+            <code>.container { display: flex; }</code>
+            <code>p {font-size: 14px;}</code>
+            <code>img {width: 100%;}</code>
+            <ul>
+                <li>CSS uses selectors to target elements based on their tag, class, id, or attributes.</li>
+                <li>Styles can be applied to individual elements, groups of elements, or based on user interaction (hover, focus, etc.).</li>
+                <li>External CSS files help keep code modular and maintainable.</li>
+                <li>CSS frameworks like Bootstrap and Tailwind help speed up the styling process.</li>
+                <li>Media queries allow you to create responsive designs for different screen sizes.</li>
+            </ul>
+        </section>
+
+        <!-- JavaScript Fundamentals Section -->
+        <section id="JavaScript_Fundamentals" class="main-section">
+            <header>JavaScript Fundamentals</header>
+            <p>JavaScript is a high-level programming language that enables interactive web pages. It is an essential part of the modern web development stack.</p>
+            <p>With JavaScript, you can manipulate HTML and CSS, handle events, and perform asynchronous operations like fetching data from a server.</p>
+            <p>JavaScript code can be added directly to an HTML file within &lt;script&gt; tags or in external files.</p>
+            <code>let x = 5;</code>
+            <code>const y = 10;</code>
+            <code>document.querySelector('h1').textContent = 'Hello JavaScript';</code>
+            <code>fetch('url').then(response => response.json());</code>
+            <code>function add(a, b) { return a + b; }</code>
+            <ul>
+                <li>JavaScript uses variables, functions, and objects to structure data and behavior.</li>
+                <li>DOM manipulation allows you to change HTML and CSS dynamically.</li>
+                <li>JavaScript supports both synchronous and asynchronous code execution.</li>
+                <li>Common asynchronous operations include HTTP requests, event handling, and setTimeout.</li>
+                <li>JavaScript frameworks and libraries like React, Angular, and Vue.js simplify complex tasks.</li>
+            </ul>
+        </section>
+
+        <!-- Git and GitHub Section -->
+        <section id="Git_and_GitHub" class="main-section">
+            <header>Git and GitHub</header>
+            <p>Git is a version control system that helps developers track changes in code. GitHub is a platform that hosts Git repositories, allowing teams to collaborate on projects.</p>
+            <p>With Git, you can commit changes, create branches, and merge code. GitHub enables easy collaboration with features like pull requests, issue tracking, and code reviews.</p>
+            <code>git init</code>
+            <code>git add .</code>
+            <code>git commit -m "Initial commit"</code>
+            <code>git push origin main</code>
+            <code>git pull origin main</code>
+            <ul>
+                <li>Git stores the history of changes in a repository, allowing you to revert to previous versions.</li>
+                <li>Git branches allow developers to work on new features without affecting the main project.</li>
+                <li>GitHub allows developers to store their Git repositories online and share them with collaborators.</li>
+                <li>GitHub provides tools for code review, such as pull requests and inline comments.</li>
+                <li>Git commands can be used in a terminal or through GUI tools like GitHub Desktop.</li>
+            </ul>
+        </section>
+
+        <!-- Web Development Tools Section -->
+        <section id="Web_Development_Tools" class="main-section">
+            <header>Web Development Tools</header>
+            <p>Web developers use a wide range of tools to write, test, and deploy code efficiently. These tools help with coding, debugging, version control, and collaboration.</p>
+            <p>Some essential web development tools include code editors, browser developer tools, and task runners.</p>
+            <code>VS Code</code>
+            <code>Chrome Developer Tools</code>
+            <code>Git</code>
+            <code>Jest</code>
+            <code>Webpack</code>
+            <ul>
+                <li>VS Code is a popular text editor with built-in features like syntax highlighting, extensions, and debugging.</li>
+                <li>Chrome Developer Tools allow you to inspect and debug web pages in real-time.</li>
+                <li>Git is essential for tracking code changes and collaborating with others.</li>
+                <li>Jest is a testing framework for writing unit tests and verifying that code works as expected.</li>
+                <li>Webpack is a module bundler that helps optimize and bundle JavaScript, CSS, and other assets for production.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
